@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Counter from "./components/counter";
 
 function App() {
-  
+  useEffect(() => {
+    console.log("This is my Counter App");
+  });
 
   return (
     <div className="App">
