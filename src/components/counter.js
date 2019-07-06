@@ -2,9 +2,12 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 const Counter = () => {
+  // componentDidMount
   useEffect(() => {
     console.log("This is my Counter App");
   }, []);
+  // componentDidUpdate
+  useEffect(() => console.log("updated..."));
 
   const counter = useSelector(state => state.counter);
   const dispatch = useDispatch();
