@@ -7,7 +7,7 @@ const Counter = () => {
     console.log("This is my Counter App");
   }, []);
   // componentDidUpdate
-  useEffect(() => console.log("updated..."));
+  useEffect(() => console.log("Counter updated..."));
 
   const counter = useSelector(state => state.counter);
   const dispatch = useDispatch();
