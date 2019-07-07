@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 const Counter = () => {
+  const counter = useSelector(state => state.counter);
+  const dispatch = useDispatch();
+  
   // componentDidMount
   useEffect(() => {
     console.log("This is my Counter App");
@@ -9,8 +12,7 @@ const Counter = () => {
   // componentDidUpdate
   useEffect(() => console.log("Counter updated..."));
 
-  const counter = useSelector(state => state.counter);
-  const dispatch = useDispatch();
+  
 
   return (
     <div className="row">
