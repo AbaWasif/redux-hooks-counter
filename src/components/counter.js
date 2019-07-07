@@ -10,7 +10,7 @@ const Counter = () => {
   };
 
   const countDecrease = () => {
-    dispatch({ type: "Decrement" });
+    dispatch({ type: "DECREMENT" });
   };
 
   // componentDidMount
