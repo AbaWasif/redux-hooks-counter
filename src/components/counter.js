@@ -25,11 +25,11 @@ const Counter = () => {
       <h1 className="w-100">Counter : {counter} </h1>
       <br />
       <br />
-      <button className="col-sm btn-primary btn-sm" onClick={countIncrease}>
+      <button className="col-sm btn-primary btn-sm m-2" onClick={countIncrease}>
         Increase
       </button>
 
-      <button className="col-sm btn-danger btn-sm" onClick={countDecrease}>
+      <button className="col-sm btn-danger btn-sm m-2" onClick={countDecrease}>
         Decrease
       </button>
     </div>
